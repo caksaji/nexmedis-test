@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: [
+    'vue-final-modal/style.css',
     '~/assets/style/_allBundle.less'
   ],
   modules: [

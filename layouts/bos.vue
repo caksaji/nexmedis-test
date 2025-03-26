@@ -5,10 +5,12 @@
     <div class="container py-8">
       <slot />
     </div>
+    <ModalsContainer />
   </div>
 </template>
 
 <script setup>
+import { ModalsContainer } from 'vue-final-modal'
 import BosNavbar from '~/components/partial/BosNavbar'
 
 const authTokenCookie = useCookie('authToken')

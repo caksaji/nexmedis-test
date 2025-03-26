@@ -10,9 +10,19 @@ export const useUserStore = defineStore('user', () => {
     }
     catch (error) { setAll([]) }
   }
+  const add = (data) => {
+    return { ...data, id: Date.now(), avatar: 'https://avatar.iran.liara.run/public' }
+  }
+  const edit = (data) => {
+    return { ...data }
+  }
+  const del = id => id
 
   return {
     all,
-    getAll
+    getAll,
+    add,
+    edit,
+    del
   }
 })
