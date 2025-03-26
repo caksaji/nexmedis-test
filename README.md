@@ -25,6 +25,7 @@ Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedi
 ## Pengerjaan
 Target durasi 3 hari, mulai 26 Maret 2025 pukul 08.50
 
-## Login
+## Login & Register
 email: eve.holt@reqres.in
 sandi: pistol
+_Daftar hanya menggunakan email yang telah tertera_

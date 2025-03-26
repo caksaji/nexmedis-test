@@ -63,34 +63,20 @@ const submitFormLogin = async () => {
   loading.value = true
   const data = {
     email: input.value.email.value,
-    password: input.value.pw.value,
-    devices_id: null,
-    token_fcm: null
+    password: input.value.pw.value
   }
-  await auth.login(data)
-    .then((res) => {
-      const authTokenCookie = useCookie('authToken', { maxAge: 3600 * 24 * 7 })
-      authTokenCookie.value = { token: res?.data?.authorization?.token, type: res?.data?.authorization?.type }
-      const loggedinUserCookie = useCookie('loggedinUser', { maxAge: 3600 * 24 * 7 })
-      loggedinUserCookie.value = {
-        firstname: res?.data?.user?.firstname,
-        lastname: res?.data?.user?.lastname,
-        fullname: res?.data?.user?.fullname,
-        email: res?.data?.user?.email,
-        avatar: res?.data?.user?.avatar
-      }
+  await auth.register(data)
+    .then(() => {
+      useNuxtApp().$toast.success('Berhasil daftar, silakan masuk dengan akun yang didaftarkan')
+      navigateTo({
+        path: '/masuk',
+        query: useRoute().query
+      },
+      { replace: true })
     })
     .catch((error) => {
-      useNuxtApp().$toast.error('Gagal daftar, pastikan email belum pernah didaftarkan, coba periksa lagi email & sandi')
+      useNuxtApp().$toast.error(error?.data?.error)
     })
-  await auth.getProfile().then(() => {
-    useNuxtApp().$toast.success('Berhasil daftar, silakan masuk dengan akun yang didaftarkan')
-    navigateTo({
-      path: '/masuk',
-      query: useRoute().query
-    },
-    { replace: true })
-  })
   loading.value = false
 }
 </script>

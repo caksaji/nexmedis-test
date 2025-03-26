@@ -68,15 +68,9 @@ const submitFormLogin = async () => {
   await auth.login(data)
     .then((res) => {
       const authTokenCookie = useCookie('authToken', { maxAge: 3600 * 24 * 7 })
-      authTokenCookie.value = { token: res?.data?.authorization?.token, type: res?.data?.authorization?.type }
+      authTokenCookie.value = { token: res?.token }
       const loggedinUserCookie = useCookie('loggedinUser', { maxAge: 3600 * 24 * 7 })
-      loggedinUserCookie.value = {
-        firstname: res?.data?.user?.firstname,
-        lastname: res?.data?.user?.lastname,
-        fullname: res?.data?.user?.fullname,
-        email: res?.data?.user?.email,
-        avatar: res?.data?.user?.avatar
-      }
+      loggedinUserCookie.value = { firstname: 'firstname' }
     })
     .catch((error) => {
       useNuxtApp().$toast.error('Gagal masuk, coba periksa lagi email & sandi')
