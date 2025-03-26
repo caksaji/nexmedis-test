@@ -6,7 +6,7 @@
           <img src="/img/logo-auth.png" class="h-12 invisible">
         </div>
         <div class="flex items-center gap-2 py-1 pr-4 pl-1 rounded-full bg-white border border-gray-400 shadow-md">
-          <div class="h-10 w-10 rounded-full bg-center bg-no-repeat bg-cover" :style="{ backgroundImage: `url(${loggedinUserCookie.avatar})` }" />
+          <div class="flex-shrink-0 h-10 w-10 rounded-full bg-center bg-no-repeat bg-cover" :style="{ backgroundImage: `url(${loggedinUserCookie.avatar})` }" />
           <span class="whitespace-nowrap font-semibold">{{ loggedinUserCookie.firstname }} {{ loggedinUserCookie.lastname }}</span>
         </div>
       </div>

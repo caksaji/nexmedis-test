@@ -1,5 +1,5 @@
 # Nexmedis - Test
-Ringkasan proyek ada disini, beberapa informasi telah dicantumkan termasuk akses login
+Ringkasan proyek ada disini, beberapa informasi telah dicantumkan termasuk akses login & register
 
 ## Deskripsi Proyek
 Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedis. Output dari proyek ini adalah web CRUD sederhana. Fitur dari aplikasi ini meliputi login, lihat profil, dan selebihnya CRUD.
@@ -21,6 +21,7 @@ Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedi
 - **Animasi**  (untuk kebutuhan estetika)
 - **Responsive**  (menyesuaikan ukuran layar perangkat)
 - **Keyboard accessibility**  (dapat mengakses input, tombol, dan element lain menggunakan tombol tab di keyboard)
+- **Error handling**  (penanganan error secara user-friendly)
 
 ## Pengerjaan
 Target durasi 3 hari, mulai 26 Maret 2025 pukul 08.50
