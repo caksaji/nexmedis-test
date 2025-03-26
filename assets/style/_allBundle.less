@@ -1,0 +1,34 @@
+@import 'component/_scrollbar';
+@import 'component/_toast';
+
+* { scroll-behavior: smooth; }
+
+::selection { @apply bg-prime-100 text-prime-700; }
+
+html, body {
+  @apply w-screen bg-gray-100 overflow-x-hidden font-normal text-gray-800;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.5;
+}
+body { @apply min-h-screen; }
+ 
+.layout-enter-active,
+.layout-leave-active {
+  transition: .3s;
+}
+.layout-enter,
+.layout-leave-active {
+  transform: translateY(15px);
+  opacity: 0;
+}
+ 
+.page-enter-active,
+.page-leave-active {
+  transition: .3s;
+}
+.page-enter,
+.page-leave-active {
+  transform: translateY(15px);
+  opacity: 0;
+}
