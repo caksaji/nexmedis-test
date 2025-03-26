@@ -1,4 +1,5 @@
 # Nexmedis - Test
+Ringkasan proyek ada disini, beberapa informasi telah dicantumkan termasuk akses login
 
 ## Deskripsi Proyek
 Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedis. Output dari proyek ini adalah web CRUD sederhana. Fitur dari aplikasi ini meliputi login, lihat profil, dan selebihnya CRUD.
@@ -15,7 +16,7 @@ Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedi
 ## Deskripsi Teknis
 - **Framework**: Nuxt.js v3 (Vue.js v3)
 - **Styling**: Tailwindcss + LESS Css
-- **State management**  (Pinia + simulasi koneksi ke API)
+- **State management**  (Pinia + simulasi koneksi ke API ke [reqres.in](https://reqres.in))
 - **Reusable component**  (efisiensi coding modular)
 - **Animasi**  (untuk kebutuhan estetika)
 - **Responsive**  (menyesuaikan ukuran layar perangkat)
@@ -23,3 +24,7 @@ Proyek ini dibangun untuk memenuhi technical test frontend web developer Nexmedi
 
 ## Pengerjaan
 Target durasi 3 hari, mulai 26 Maret 2025 pukul 08.50
+
+## Login
+email: eve.holt@reqres.in
+sandi: pistol

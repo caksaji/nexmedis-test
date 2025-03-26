@@ -63,9 +63,7 @@ const submitFormLogin = async () => {
   loading.value = true
   const data = {
     email: input.value.email.value,
-    password: input.value.pw.value,
-    devices_id: null,
-    token_fcm: null
+    password: input.value.pw.value
   }
   await auth.login(data)
     .then((res) => {
@@ -83,13 +81,13 @@ const submitFormLogin = async () => {
     .catch((error) => {
       useNuxtApp().$toast.error('Gagal masuk, coba periksa lagi email & sandi')
     })
-  await auth.getProfile().then(() => {
+  await auth.getProfile(4).then(() => {
     useNuxtApp().$toast.success(`Berhasil masuk, selamat datang ${useCookie('loggedinUser').value.firstname}`)
     if (useRoute().query?.then === 'back') {
       useRouter().back()
     }
     else {
-      navigateTo('/beranda', { replace: true })
+      navigateTo('/dashboard', { replace: true })
     }
   })
   loading.value = false
