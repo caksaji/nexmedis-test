@@ -16,7 +16,7 @@
     <div class="fixed top-0 right-0 h-screen w-60 p-2 transform duration-300 md:left-0 md:translate-x-0 sidebar" :class="{ 'translate-x-full': showSidebar === false }" style="z-index: 11;">
       <div class="h-full border border-gray-300 rounded-xl bg-white overflow-hidden dark:border-gray-800 dark:bg-gray-800">
         <div class="pt-2 px-2">
-          <div class="h-8 bg-contain bg-no-repeat bg-center md:bg-left" :style="{ backgroundImage: 'url(/img/logo-long.png)' }" />
+          <div class="h-8 bg-contain bg-no-repeat bg-center md:bg-left" :style="{ backgroundImage: 'url(/img/logo-auth.png)' }" />
         </div>
         <div class="px-2 mt-8">
           <div class="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-500" />

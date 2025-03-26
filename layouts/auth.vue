@@ -8,7 +8,7 @@
         <slot />
       </div>
       <div class="text-center">
-        {{ $route.path === '/daftar' ? 'Belum punya akun?' : 'Sudah punya akun?' }} <span v-wave tabindex="0" class="link" @click="switchMode" @keydown.enter="switchMode">{{ $route.path === '/daftar' ? 'Daftar disini' : 'Masuk disini' }}</span>
+        {{ $route.path === '/daftar' ? 'Sudah punya akun?' : 'Belum punya akun?' }} <span v-wave tabindex="0" class="link" @click="switchMode" @keydown.enter="switchMode">{{ $route.path === '/daftar' ? 'Masuk disini' : 'Daftar disini' }}</span>
       </div>
     </div>
     <div class="hidden w-full py-4 md:block">

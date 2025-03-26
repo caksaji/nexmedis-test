@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   app: {
-    head: {
-      meta: [{ hid: 'description', name: 'description', content: 'Aplikasi pemesanan tiket pendakian' }]
-    },
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
