@@ -1,6 +1,6 @@
 <template>
   <div class="h-16">
-    <div class="fixed top-0 left-0 w-screen py-4">
+    <div class="fixed top-0 left-0 w-screen py-2 bg-white/50 backdrop-filter backdrop-blur" style="z-index: 1;">
       <div class="container flex items-center justify-between gap-4">
         <div class="w-full mx-auto bg-left bg-no-repeat bg-contain" :style="{ backgroundImage: 'url(/img/logo-auth.png)' }">
           <img src="/img/logo-auth.png" class="h-12 invisible">
